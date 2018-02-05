@@ -20,7 +20,7 @@ alert("Do you really want to leave this page?");
 When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
 If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null.
 
->The prompt() method takes two parameters. 
+>The prompt() method takes two parameters.
 - The first is the label, which you want to display in the text box.
 - The second is a default string to display in the text box (optional).
 
