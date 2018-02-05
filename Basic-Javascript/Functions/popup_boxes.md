@@ -2,7 +2,7 @@
 
 >JavaScript offers three types of popup boxes, the **Alert**, **Prompt**, and **Confirm** boxes.
 
-###Alert Box
+##Alert Box
 
 >An alert box is used when you want to ensure that information gets through to the user.
 When an alert box pops up, the user must click **OK** to proceed.
@@ -14,7 +14,7 @@ The alert function takes a _single parameter_, which is the text displayed in th
 alert("Do you really want to leave this page?");
 ```
 
-###Prompt Box
+##Prompt Box
 
 >A prompt box is often used to have the user input a value before entering a page.
 When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
@@ -31,7 +31,7 @@ var user = prompt("Please enter your name");
 alert(user);
 ```
 
-###Confirm Box
+##Confirm Box
 
 >A confirm box is often used to have the user verify or accept something.
 When a confirm box pops up, the user must click either OK or Cancel to proceed.
