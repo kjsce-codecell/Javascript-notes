@@ -1,4 +1,4 @@
-<h1 text-align="center">User Defined Functions</h1>
+<h1 style = "text-align:center">User Defined Functions</h1>
 
 ### Defining a Function
 
