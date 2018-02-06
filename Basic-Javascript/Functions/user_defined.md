@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <h1 align="center">User Defined Functions</h1>
+=======
+<h1 style = "text-align:center">User Defined Functions</h1>
+>>>>>>> 8018217f310bcdac40b5b89e352874529b639930
 
 ### Defining a Function
 
