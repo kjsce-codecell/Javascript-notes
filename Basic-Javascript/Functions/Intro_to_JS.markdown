@@ -84,3 +84,41 @@ console.log('Is commented out');
 console.log('And will not be executed);
 */
 ```
+
+## Variables
+Programmers use variables to write code that is easy to understand and repurpose.
+Variables allow us to assign data to a word and use the word to reference the data.
+### Variable: const
+Const, short for constant, is a JavaScript keyword that creates a new variable with a value that cannot change.
+Let us take an example:
+```javascript
+const myName = 'Arya';
+console.log(myName);
+// Output: Arya
+```
+Here "myName" is the variable's name. Notice that the word has no spaces.
+'Arya' is the value assigned (=) to the variable myName.
+Now if following is added:
+```javascript
+myName='Charya';
+```
+This code throws the following error when you run your code:
+```TypeError: Assignment to constant variable.```
+JavaScript threw an error because you assigned a new value to a constant variable. Constant variables, as their name implies, are constant — you cannot assign them a different value.
+
+### variable: let
+However unlike variable const ,variable let can be reassigned.
+Let us take an example:
+```javascript
+let meal = 'Enchiladas';
+console.log(meal);  // output: Enchiladas
+meal = 'Tacos';
+console.log(meal);  // output: Tacos
+```
+### Undefined
+What happens if you create a variable, but don't assign it a value?
+JavaScript creates space for this variable in memory and sets it to undefined. JavaScript assigns the undefined data type to variables that are not assigned a value.
+```javascript
+let notDefined;
+console.log(notDefined); //output: undefined
+```
