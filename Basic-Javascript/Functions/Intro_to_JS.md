@@ -1,4 +1,4 @@
-# JAVASCRPIT
+# JavaScript
 JavaScript is a widely used web-based programming language that powers the dynamic behavior on most websites, including this one.
 
 ## Console
