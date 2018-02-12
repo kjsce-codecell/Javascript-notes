@@ -38,7 +38,7 @@ World
 Async
 ```
 
-This code will print the word 'Hello' then 'World' one after another seemingly at the same time (in reality just very very quickly). It will then print the word Async after the request for the file from the server has succeeds (if it fails it will print out an error instead). This code needs to be asynchronous because **requesting data from the server could take a considerable amount of time**. As such we do not want such a slow operation to block the execution of our entire script when we could probably be doing other things in the meantime**(in our case we checked the if any other code was left and we printed World as soon as the requesting part was given to handle by the server)**.
+This code will print the word 'Hello' then 'World' one after another seemingly at the same time (in reality just very very quickly). It will then print the word Async after the request for the file from the server has succeeds (if it fails it will print out an error instead). This code needs to be asynchronous because **requesting data from the server could take a considerable amount of time**. As such we do not want such a slow operation to block the execution of our entire script when we could probably be doing other things in the meantime **(in our case we checked the if any other code was left and we printed World as soon as the requesting part was given to handle by the server)**.
 
 *To get asynchronous behavior for Javascript. **AJAX** is used*.
 
