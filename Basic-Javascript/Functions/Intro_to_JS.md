@@ -1,4 +1,4 @@
-# JAVASCRPIT
+# JavaScript
 JavaScript is a widely used web-based programming language that powers the dynamic behavior on most websites, including this one.
 
 ## Console
@@ -88,6 +88,11 @@ console.log('And will not be executed);
 ## Variables
 Programmers use variables to write code that is easy to understand and repurpose.
 Variables allow us to assign data to a word and use the word to reference the data.
+### Variable: var
+The variable statement declares a variable, optionally initializing it to a value.
+```
+var x = 1;
+```
 ### Variable: const
 Const, short for constant, is a JavaScript keyword that creates a new variable with a value that cannot change.
 Let us take an example:
@@ -106,7 +111,7 @@ This code throws the following error when you run your code:
 ```TypeError: Assignment to constant variable.```
 JavaScript threw an error because you assigned a new value to a constant variable. Constant variables, as their name implies, are constant — you cannot assign them a different value.
 
-### variable: let
+### Variable: let
 However unlike variable const ,variable let can be reassigned.
 Let us take an example:
 ```javascript
@@ -121,4 +126,85 @@ JavaScript creates space for this variable in memory and sets it to undefined. J
 ```javascript
 let notDefined;
 console.log(notDefined); //output: undefined
+```
+## Loops
+JavaScript loops are used to repeatedly run a block of code - until a certain condition is met. When developers talk about iteration or iterating over, say, an array, it is the same as looping. JavaScript offers several options to repeatedly run a block of code, including while, do while, for and for-in.
+### While Loop
+```
+var sum = 0;
+var number = 1;
+while (number <= 50) {  // -- condition
+  sum += number;        // -- body
+  number++;             // -- updater
+}
+alert("Sum = " + sum);  // => Sum = 1275
+```
+The condition is first evaluated. If true, the block of statements following the while statement is executed. This is repeated until the condition becomes false. 
+### For Loop
+```
+var sum = 0;
+for (var i = 1; i <= 50; i++) {
+   sum = sum + i;
+}
+alert("Sum = " + sum);    // => Sum = 1275
+```
+It consists of three parts, separated by semicolons. The first is the initializer (var i = 1) which initializes the loop and is executed only once at the start. The second is a test condition (i <= 50). When a conditional expression evaluates to true, the body of the loop is executed. When false, the loop terminates. The third part is an updater (i++) which is invoked after each iteration. The updater typically increments or decrements the loop counter.
+## Conditional Statements
+Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this.
+
+In JavaScript we have three conditional statements:
+
+1) if statement - use this statement if you want to execute a set of code when a condition is true
+2) if...else statement - use this statement if you want to select one of two sets of lines to execute
+
+### If 
+The if statement is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally.
+```
+if (expression){
+   Statement(s) to be executed if expression is true
+}
+```
+### If Else
+The 'if...else' statement is the next form of control statement that allows JavaScript to execute statements in a more controlled way.
+```
+if (expression){
+   Statement(s) to be executed if expression is true
+}
+
+else{
+   Statement(s) to be executed if expression is false
+}
+```
+Here JavaScript expression is evaluated. If the resulting value is true, the given statement(s) in the ‘if’ block, are executed. If the expression is false, then the given statement(s) in the else block are executed.
+## Arrays
+The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+```
+var fruits = [ "apple", "orange", "mango" ];
+```
+## Functions
+A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+### Function Definition
+Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.
+```
+function functionname(parameter-list)
+      {
+         statements
+      }
+```
+### Return Statement
+A JavaScript function can have an optional return statement. This is required if you want to return a value from a function. This statement should be the last statement in a function.
+```
+function concatenate(first, last)
+         {
+            var full;
+            full = first + last;
+            return full;
+         }
+         
+         function secondFunction()
+         {
+            var result;
+            result = concatenate('Donald', 'Duck');
+            document.write (result );
+         }
 ```
