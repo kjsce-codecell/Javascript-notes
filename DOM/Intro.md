@@ -1,7 +1,8 @@
 # DOM
 When a webpage is loaded, the browser creates a **D**ocument **O**bject **Mo**del, as in it creates a tree to represent and access all the contents easily.
-Here's an example-
+Here's an example-<br><br>
 ![The DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+<br>
 Anyone with basic html knowledge, can relate to this diagram, the html being the root element, and all the other elements or objects lying under it.
 So, basically, the DOM is a **BIG** object which represents the whole HTML page, to see it live in action, press- Ctrl + Shift + J, which shall open the console tab, now type in- document in the tab, and press enter, and check the output !
 *PS: If you know how to imagine trees using bracket syntax, this will be much easier*
@@ -17,7 +18,7 @@ Now, once you know all this, Javascript enables us to interact with all these el
 So, let's try to do some magic on HTML using outr knowledge of Javascript
 There are basically two types of stuff you can do while manipulating the DOM
 - you can either alter the structure of the DOM
-- or make changes to the exisiting structure. 
+- or make changes to the exisiting structure.
 
 First of all, to make changes to an object from the DOM, you need to select that object, there are 3 basic ways to select an object or an element of the DOM-
 - by tag name, example: div,p,a, selects all the elements having that tag
@@ -49,7 +50,9 @@ Now, that we have delt with changing the appearances of the elements, let's see 
 - document.removeChild(element)
 
 Here is how one can write hello world in html, with dom manipulation onyl, you can try this in a new blank tab, by going to- about:blank and typing out the following code-
+<br><br>
 ![hello_world_html](https://image.prntscr.com/image/osE0GMuMQYCvKOcV-7E4xw.png)
+<br><br>
 For the lazy:
 ``` javascript
 //inspect the dom
@@ -103,4 +106,4 @@ Also, a single event on a single element, can trigger multiple functions, but ne
 element.addEventListener("click",sayHello);
 element.addEventListener("click",sayHelloAgain);
 ```
-Here, both sayHello and SayHelloAgain will be triggered. 
+Here, both sayHello and SayHelloAgain will be triggered.
