@@ -90,7 +90,22 @@ var pug = new Dog("Pug");
 pug.saySpecies() // Prints Dog
 pug.sayBreed() // Prints Pug
 
+
 // Here we added methods of Animal module to Dog module.
+```
+
+We can also override the inherited method if we want.
+
+```js
+
+Dog.prototype.saySpecies = function() {
+	console.log("Doggo");
+}
+
+var doggo = new Dog("Bull Dog");
+doggo.saySpecies() // Prints Doggo
+
+
 ```
 
 <h2>Next?</h2> This was one way to do Inheritance and Instantiation in javascript. There is one other way to do it. It is called Prototypal Inheritance.
