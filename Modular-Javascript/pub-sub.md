@@ -63,7 +63,7 @@ Solution:
 //Hello Module
 var hello = ( () => {
 
-	sayHello: () => {
+	var sayHello = () => {
     
     	alert("hello");
         

@@ -35,13 +35,13 @@ var dog = {
 
 	breed : "pug",
     
-    bark: () => {
+    bark: function() {
     	
         // Bark Code Here
         
     },
     
-    run: () {
+    run: function() {
     
     	// Run Code Here
         
@@ -53,12 +53,16 @@ var dog2 = {
 	
     breed : "bull dog",
     
-    bark: () => { // Some other Bark Code Here },
+    bark: function() { 
+    	// Some other Bark Code Here 
+    },
     
-    run: () => { // Some Other Run Code Here }
+    run: function() { 
+    	// Some Other Run Code Here 
+    }
 };
 
-dog1.bark();
+dog.bark();
 dog2.bark();
 
 ```
@@ -86,27 +90,27 @@ var efficientCode = {
 	
     aDOMObject : document.getElementById('myObject'),
     
-    printObject: () => {
+    printObject: function() {
     
-    	console.log(aDOMObject);
+    	console.log(this.aDOMObject);
         // Use the saved value
         
     },
     
-    clickFunc: e=>{
+    clickFunc: function(e) {
     
     	console.log("clicked");
         
     },
     
-    addListener: ()=> {
+    addListener: function() {
     
-    	aDOMObject.addEventListener('click', clickFunc);
+    	this.aDOMObject.addEventListener('click', this.clickFunc);
         
     },
     
-    destroy: ()=> {
-    	aDOMObject.removeEventListener('click', clickFunc);
+    destroy: function() {
+    	this.aDOMObject.removeEventListener('click', this.clickFunc);
         // Remove the listeners when destroyed to avoid memory leak
     }
 };

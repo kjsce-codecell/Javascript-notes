@@ -8,19 +8,19 @@
 
 ```js
 
-var dog = ( () => {
+var dog = ( function() {
 	var breed = "pug";
     
     // This function returns the value of breed variable
-    var getBreed = () => {
-    	return this.breed;
+    var getBreed = function() {
+    	return breed;
     }
     
-    var bark = () => {
+    var bark = function() {
     	// Bark Code Here
     }
     
-    var run = () => {
+    var run = function() {
     	// Run Code Here
     }
     
@@ -60,9 +60,9 @@ Write two modules, one that has a function that alerts hello and the other that 
 
 Simple Enough?
 ```js
-var hello = ( () => {
+var hello = ( function() {
 
-	sayHello: () => {
+	var sayHello = function() {
     
     	alert("hello");
         
@@ -76,11 +76,11 @@ var hello = ( () => {
     
 })();
 
-var button = ( () => {
+var button = ( function() {
 
 	var button = document.getElementById('button');
     
-    button.addEventListener('click', e => {
+    button.addEventListener('click', function(e) {
     
     	hello.sayHello();
         
