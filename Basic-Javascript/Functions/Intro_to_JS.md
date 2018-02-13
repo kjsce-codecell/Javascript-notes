@@ -11,13 +11,13 @@ In this example, Hello! is logged to the console. Notice, we denote the end of t
 ## Data types
 Data types are the building blocks of all languages and essential pieces of any program.
 
-•**Strings** — Any grouping of keyboard characters (letters, spaces, numbers, or symbols) surrounded by single quotes ('Hello') or double quotes ("World!"). In the example above, 'New York City' is a string.
+• **Strings** — Any grouping of keyboard characters (letters, spaces, numbers, or symbols) surrounded by single quotes ('Hello') or double quotes ("World!"). In the example above, 'New York City' is a string.
 
-•**Numbers** — Any number, including numbers with decimals: 4, 1516, .002, 23.42. In the example above, 40.7 is a number.
+• **Numbers** — Any number, including numbers with decimals: 4, 1516, .002, 23.42. In the example above, 40.7 is a number.
 
-•**Booleans** — Either true or false, with no quotations. In the example above, true is a boolean.
+• **Booleans** — Either true or false, with no quotations. In the example above, true is a boolean.
 
-•**Null** — Can only be null. It represents the absence of value.
+• **Null** — Can only be null. It represents the absence of value.
 
 An instance, string has additional information attached to it.
 Every string instance has a property called length that stores the number of characters in it. You can retrieve property information by appending the string with a period and the property name:
@@ -90,7 +90,7 @@ Programmers use variables to write code that is easy to understand and repurpose
 Variables allow us to assign data to a word and use the word to reference the data.
 ### Variable: var
 The variable statement declares a variable, optionally initializing it to a value.
-```
+```javascript
 var x = 1;
 ```
 ### Variable: const
@@ -130,7 +130,7 @@ console.log(notDefined); //output: undefined
 ## Loops
 JavaScript loops are used to repeatedly run a block of code - until a certain condition is met. When developers talk about iteration or iterating over, say, an array, it is the same as looping. JavaScript offers several options to repeatedly run a block of code, including while, do while, for and for-in.
 ### While Loop
-```
+```javascript
 var sum = 0;
 var number = 1;
 while (number <= 50) {  // -- condition
@@ -141,7 +141,7 @@ alert("Sum = " + sum);  // => Sum = 1275
 ```
 The condition is first evaluated. If true, the block of statements following the while statement is executed. This is repeated until the condition becomes false. 
 ### For Loop
-```
+```javascript
 var sum = 0;
 for (var i = 1; i <= 50; i++) {
    sum = sum + i;
@@ -159,14 +159,14 @@ In JavaScript we have three conditional statements:
 
 ### If 
 The if statement is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally.
-```
+```javascript
 if (expression){
    Statement(s) to be executed if expression is true
 }
 ```
 ### If Else
 The 'if...else' statement is the next form of control statement that allows JavaScript to execute statements in a more controlled way.
-```
+```javascript
 if (expression){
    Statement(s) to be executed if expression is true
 }
@@ -178,14 +178,25 @@ else{
 Here JavaScript expression is evaluated. If the resulting value is true, the given statement(s) in the ‘if’ block, are executed. If the expression is false, then the given statement(s) in the else block are executed.
 ## Arrays
 The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
-```
+```javascript
 var fruits = [ "apple", "orange", "mango" ];
+```
+### ForEach
+Apply the passed function to each element in the list or any iterable for that matter.
+```javascript
+var array1 = ['a', 'b', 'c'];
+array1.forEach(function(element) {
+  console.log(element);
+});
+//a
+//b
+//c
 ```
 ## Functions
 A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
 ### Function Definition
 Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.
-```
+```javascript
 function functionname(parameter-list)
       {
          statements
@@ -193,7 +204,7 @@ function functionname(parameter-list)
 ```
 ### Return Statement
 A JavaScript function can have an optional return statement. This is required if you want to return a value from a function. This statement should be the last statement in a function.
-```
+```javascript
 function concatenate(first, last)
          {
             var full;
