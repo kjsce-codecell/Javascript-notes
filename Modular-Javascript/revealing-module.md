@@ -1,4 +1,4 @@
-<h1 align = "center">Object Literal Pattern</h1>
+<h1 align = "center">Revealing Module Pattern</h1>
 <h2> Introduction: </h2>
 <p style = "text-indent: 10%">Revealing Module Pattern is implemented using self evaluating functions in javascript. Self evaluating functions are anonymous functions that are executed right after they are declared.</p>
 
