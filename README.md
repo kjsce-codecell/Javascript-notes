@@ -7,7 +7,7 @@
 Supplementary material for the workshop by team **codecell** to get started with JavaScript from scratch and further apply it to build something effective.We hope it serves the purpose successfully.
 
 ### Content
-1. [Introduction](,/Basic-Javascript)
+1. [Introduction](./Basic-Javascript)
 2. [Modular Design Pattern](./Modular-Javascript)
 3. [Asynchronous JavaScript](./Asynchronous_Javascript)
 4. [Document Object Model](./DOM)
