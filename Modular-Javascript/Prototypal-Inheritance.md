@@ -1,4 +1,4 @@
-<h1 align = "center">Classical Inheritance</h1>
+<h1 align = "center">Prototypal Inheritance</h1>
 <h2> Introduction: </h2>
 <p style = "text-indent: 10%">Prototypal inheritance is just like Classical Inheritance. Here, instead of using functions we use objects to create modules. And we use Object.create function to create an object.</p>
 
